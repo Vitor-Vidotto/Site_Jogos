@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, gray, black, #303030);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+h2{
+    font-size: 2rem;
+    color:#fff;
+    border: 3px solid darkgray;
+    background-color: black;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+h3{
+    font-size: 2rem;
+    color:#fff;
+
+    border: 3px solid darkgray;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+h4{
+    font-size: 2rem;
+    color:#fff;
+    border: 3px solid darkgray;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+h5{
+    font-size: 2rem;
+    color:#fff;
+    border: 3px solid darkgray;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+h6{
+    font-size: 2rem;
+    color:#fff;
+    border: 3px solid darkgray;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.btn1{
+    font-size: 2rem;
+    background-color: Black;
+    border: 3px gainsboro solid;
+    border-radius: 2cm;
+    color: white;
+    width: 150px;
+    height: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.btn2{
+    font-size: 2rem;
+    background-color: Black;
+    border: 3px gainsboro solid;
+    border-radius: 2cm;
+    color: white;
+    width: 150px;
+    height: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.btn3{
+    font-size: 2rem;
+    background-color: Black;
+    border: 3px gainsboro solid;
+    border-radius: 2cm;
+    color: white;
+    width: 150px;
+    height: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.btn4{
+    font-size: 2rem;
+    background-color: Black;
+    border: 3px gainsboro solid;
+    border-radius: 2cm;
+    color: white;
+    width: 150px;
+    height: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%)
+}
+.btn5{
+    font-size: 2rem;
+    background-color: green;
+    border: 3px gainsboro solid;
+    border-radius: 2cm;
+    color: white;
+    width: 300px;
+    height: 80px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%, -50%)
+}
+.btn6{
+    font-size: 2rem;
+    background-color: red;
+    border: 3px gainsboro solid;
+    border-radius: 2cm;
+    color: white;
+    width: 300px;
+    height: 80px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%)
+}
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}

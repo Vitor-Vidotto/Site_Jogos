@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RetroGames - Asteroids</title>
+    <script src="game.js"></script>
+    <script src="asteroidField.js"></script>
+    <script src="asteroid.js"></script>
+    <script src="ship.js"></script>
+    <script src="rocket.js"></script>
+    <script src="utils.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+
+	<!--
+	Simples pagina para criar o espaço onde o jogo ficará, listar os comandos e iniciar o script
+	-->
+</head>
+
+<body>
+    <a href="Frontend.html">
+        <button class="btn4" type="button" form="teste">
+            Retornar
+        </button>
+    </a>
+    <div id="game"></div>
+
+    <h6> Use as "Setas" do teclado para se mover e o "Espaco" para atirar </h6>
+
+    <script>
+        var game = new Game(document.getElementById('game'));
+        game.start();
+
+        window.addEventListener("keydown", function keydown(e) {
+            var keycode = e.which || window.event.keycode;
+            //  Supress further processing of left/up/right/down/space (37/38/39/40/32)
+            if (keycode === 37 || keycode === 38 || keycode === 39 || keycode === 40 || keycode === 32) {
+                e.preventDefault();
+            }
+            game.keyDown(keycode);
+        });
+        window.addEventListener("keyup", function keyup(e) {
+            var keycode = e.which || window.event.keycode;
+            game.keyUp(keycode);
+        });
+    </script>
+</body>
+
+</html>
